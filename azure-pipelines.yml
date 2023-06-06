@@ -1,9 +1,10 @@
 trigger:
 - none
 
-pool:
-  vmImage: Default
-
+pool: 
+  name: Default
+  
+steps:
 - task: Docker@2
   inputs:
     command: 'build'
