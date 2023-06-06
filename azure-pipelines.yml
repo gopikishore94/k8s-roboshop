@@ -8,6 +8,8 @@ steps:
 - task: Docker@2
   displayName: Build Docker Image
   inputs:
+    containerRegistry: 'Docker Registry'
+    repository: '338121/web-app'
     command: 'build'
     Dockerfile: '**/Dockerfile'
     
