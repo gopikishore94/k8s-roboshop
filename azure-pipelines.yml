@@ -9,7 +9,7 @@ steps:
   displayName: Build Docker Image
   inputs:
     containerRegistry: 'Docker Registry'
-    repository: '338121/web-app'
+    repository: $(docker repo)
     command: 'build'
     Dockerfile: '**/Dockerfile'
     
@@ -17,6 +17,6 @@ steps:
   displayName: Push Docker Image
   inputs:
     containerRegistry: 'Docker Registry'
-    repository: '338121/web-app'
+    repository: $(docker repo)
     command: 'push'
     
