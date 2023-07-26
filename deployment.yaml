@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: qi-site
-  namespace: qi
+  namespace: web-app
   labels:
     app: webserver
     tier: app
