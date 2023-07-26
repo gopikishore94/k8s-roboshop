@@ -24,7 +24,7 @@ spec:
       containers:
       - name: webserver
         imagePullPolicy: Always
-        image: 338121/webserver:v2
+        image: 338121/webserver:v3
         resources:
           requests:
             memory: "64Mi"
